@@ -49,9 +49,9 @@ const LoginWindow = (props) => {
       action="/login" 
       method="POST" 
       className="mainForm">
-      <label for="username">Username: </label>
+      <label htmlFor="username">Username: </label>
       <input id="user" type="text" name="username" placeholder="username"/>
-      <label for="pass">Password: </label>
+      <label htmlFor="pass">Password: </label>
       <input id="pass" type="password" name="pass" placeholder="password"/>
       <input class="formSubmit" type="submit" value="Sign In" />
     </form>
@@ -67,11 +67,11 @@ const SignupWindow = (props) => {
       action="/signup" 
       method="POST" 
       className="mainForm">
-      <label for="username">Username: </label>
+      <label htmlFor="username">Username: </label>
       <input id="user" type="text" name="username" placeholder="username"/>
-      <label for="pass">Password: </label>
+      <label htmlFor="pass">Password: </label>
       <input id="pass" type="password" name="pass" placeholder="password"/>
-      <label for="pass">Password: </label>
+      <label htmlFor="pass">Password: </label>
       <input id="pass" type="password" name="pas2" placeholder="password"/>
       <input class="formSubmit" type="submit" value="Sign Up" />
     </form>
@@ -99,4 +99,4 @@ const init = () => {
   root.render( <LoginWindow /> )
 }
 
-window.addEventListener('load', init);
+window.onload = init;
